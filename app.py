@@ -7,5 +7,5 @@ classifier(text)
 
 
 if text:
-  out = pipe(text)
+  out = classifer(text)
   st.json(out)

@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import pipeline
+from transformers import BertTokenizer
 
 text = st.text_area('enter some text:')
 classifier = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
